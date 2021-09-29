@@ -8,9 +8,23 @@
   </head>
   <body>
     <h1>Express Server Home Page</h1>
+    <h2>File Form</h2>
     <form action="/uploads" method="POST" enctype="multipart/form-data">
       <input type="file" name="uploads" multiple="multiple" />
       <button type="submit">Submit file</button>
+    </form>
+    <h2>Users Form</h2>
+    <form action="/users" method="POST">
+      <label>User</label>
+      <br />
+      <input name="user" />
+      <br />
+      <label>Password</label>
+      <br />
+      <input name="password" />
+      <br />
+      <button type="submit">Submit form</button>
+      <button type="reset">Reset form</button>
     </form>
   </body>
 </html>
